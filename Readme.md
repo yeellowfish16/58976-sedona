@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Цицеронова](https://up.htmlacademy.ru/htmlcss/21/user/58976).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара] (https://htmlacademy.ru/profile/lena___elena)
 
 ---
 
