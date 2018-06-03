@@ -5,82 +5,80 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class='main-header'>
-      <nav class='main-nav'>
-        <ul class='main-nav__list'>
-          <li class='main-nav__item'>
-            <a class='main-nav__link' href='#'>Информация</a>
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Информация</a>
           </li>
-          <li class='main-nav__item'>
-            <a class='main-nav__link' href='#'>Фото и видео</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фото и видео</a>
           </li>
-          <li class='main-nav__item'>
-            <a class='main-nav__link' href='#'>Карта штата</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Карта штата</a>
           </li>
-          <li class='main-nav__item'>
-            <a class='main-nav__link' href='inner.html'>Гостиницы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="inner.html">Гостиницы</a>
           </li>
         </ul>
         <!--картинку-ссылку на главную вставила, как и было сказано в видео, после списка-->
-        <a class='main-nav__logo' href="#"><img src="http://placehold.it/150x100" alt="Логотип Sedona"></a>
+        <a class="main-nav__logo"><img class="main-nav__logo--img" src="http://placehold.it/150x100" alt="Логотип Sedona"></a>
       </nav>
     </header>
-    <main class='container'>
+    <main class="container">
       <section class="intro">
-        <p class="intro__text"><span>Welcome</span> to the gorgeous</p>
-        <h1 class="intro__heading">Sedona</h1>
-        <p class="intro__text">"Because the Grand Canyon sucks!"</p>
+        <!--тут будет SVG-->
+        <img class="container--background" src="http://placehold.it/150x100">
       </section>
       <section class="features">
-        <h2 class="features__heading--hidden">Преимущества</h2>
-        <p class="features__text"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+        <h2 class="features__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features__list">
-          <li class="features__item--text">
+          <li class="features__item">
             <h3 class="features__title">Настоящий городок</h3>
-            <p class="features__text">№1</p>
+            <p class="features__text features__text--number">№1</p>
             <p class="features__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="features__item--img">
             <img class="features__img" src="http://placehold.it/150x100" alt="Вид на дом в Седоне">
+            <ul class="features__list--inner">
+              <li class="features__item features__item--inner">
+                <p class="features__icon"><!--блок для того, чтобы добавить иконку бэкграундом--></p>
+                <h4 class="features__title">Жильё</h4>
+                <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="features__item features__item--inner">
+                <p class="features__icon"><!--блок для того, чтобы добавить иконку бэкграундом--></p>
+                <h4 class="features__title">Еда</h4>
+                <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features__item features__item--inner">
+                <p class="features__icon"><!--блок для того, чтобы добавить иконку бэкграундом--></p>
+                <h4 class="features__title">Сувениры</h4>
+                <p class="features__text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
-           <li class="features__item--text">
-            <p class="features__icon"><!--блок для того, чтобы добавить иконку бэкграундом--></p>
-            <h3 class="features__title">Жильё</h3>
-            <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="features__item--text">
-            <p class="features__icon"><!--блок для того, чтобы добавить иконку бэкграундом--></p>
-            <h3 class="features__title">Еда</h3>
-            <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="features__item--text">
-            <p class="features__icon"><!--блок для того, чтобы добавить иконку бэкграундом--></p>
-            <h3 class="features__title">Сувениры</h3>
-            <p class="features__text">Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="features__item--img">
+          <li class="features__item">
             <img class="features__img" src="http://placehold.it/150x100" alt="Вид на каньон в Седоне">
-          </li>
-          <li class="features__item--text">
             <h3 class="features__title">Там есть мост дьявола</h3>
-            <p class="features__text">№2</p>
+            <p class="features__text features__text--number">№2</p>
             <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-          <li class="features__item--text">
-            <h3 class="features__title">Небольшая площадь</h3>
-            <p class="features__text">№3</p>
-            <p class="features__text">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="features__item--text">
-            <h3 class="features__title">Красивая дорога</h3>
-            <p class="features__text">№4</p>
-            <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="features__item--text">
-            <h3 class="features__title">Мало туристов</h3>
-            <p class="features__text">№5</p>
-            <p class="features__text">Большинство едет в гранд каньон и толпится там</p>
+            <ul class="features__list--inner">
+              <li class="features__item features__item--inner">
+                <h4 class="features__title">Небольшая площадь</h4>
+                <p class="features__text">№3</p>
+                <p class="features__text">Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="features__item features__item--inner">
+                <h4 class="features__title">Красивая дорога</h4>
+                <p class="features__text features__text--number">№4</p>
+                <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="features__item features__item--inner">
+                <h4 class="features__title">Мало туристов</h4>
+                <p class="features__text features__text--number">№5</p>
+                <p class="features__text">Большинство едет в гранд каньон и толпится там</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -88,10 +86,10 @@
         <h3 class="form__heading">Заинтересовались?</h3>
         <p class="form__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button сlass="button form__button" type="button">Поиск гостиницы в Седоне</button>
-        <!--выпадающая форма будет относиться именно к этой section, поэтому нелогично выносить ее за <main></main>, верно? Саму форму я не размечаю, как было сказано в задании-->
+        <!--Саму форму я не размечаю, как было сказано в задании-->
       </section>
       <section class="map">
-      <!--тут будет встроена карта или что-то надо прописать уже сейчас?-->
+        <img class="map__img" src="http://placehold.it/150x100" width="1200" height="470">
       </section>
     </main>
     <footer class="main-footer">
