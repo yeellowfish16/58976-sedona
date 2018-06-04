@@ -22,7 +22,7 @@
           </li>
         </ul>
         <!--картинку-ссылку на главную вставила, как и было сказано в видео, после списка-->
-        <a class="main-nav__logo" href="index.html"><img class="main-nav__logo--img" src="http://placehold.it/150x100" alt="Логотип Sedona"></a>
+        <a class="main-nav__logo" href="index.html"><img class="main-nav__img" src="http://placehold.it/150x100" alt="Логотип Sedona"></a>
       </nav>
     </header>
     <main class="container">
@@ -33,20 +33,22 @@
         <p class="filter-results__number">Найдено: 3</p>
         <ul class="filter-results__sort">
           <li class="filter-results__item">
-            <span class="filter-results__item--title">Сортировка:</span>
+            <span class="filter-results__title">Сортировка:</span>
           </li>
           <li class="filter-results__item">
-            <span class="filter-results__item--parameter">По цене</span>
+            <a class="filter-results__parameter" href="inner.html?sort=price">По цене</a>
           </li>
           <li class="filter-results__item">
-            <span class="filter-results__item--parameter">По типу</span>
+            <a class="filter-results__parameter" href="inner.html?sort=type">По типу</a>
           </li>
           <li class="filter-results__item">
-            <span class="filter-results__item--parameter">По рейтингу</span>
+            <a class="filter-results__parameter" href="inner.html?sort=ranking">По рейтингу</a>
           </li>
         </ul>
         <div class="filter-results__ranking">
-         <!--блок со стрелочками для ранжирования результатов-->
+          <!--пока со словами, потом добавим стрелки-->
+          <a class="filter-results__order filter-results__order--up" href="inner.html?sort=up">По возрастанию</a>
+          <a class="filter-results__order filter-results__order--down" href="inner.html?sort=down">По убыванию</a>
         </div>
       </section>
       <section class="offers">
@@ -63,10 +65,10 @@
               <a class="button offer__button offer__button--order" href="#">Забронировать</a>
             </section>
             <section class="offers__raiting">
-              <div class="offers__raiting--icon">
+              <div class="offers__raiting-icon">
               <!--тут звездочки-оценки-->
               </div>
-              <p class="offers__raiting--text">Рейтинг: 8,5</p>
+              <p class="offers__raiting-text">Рейтинг: 8,5</p>
             </section>
           </li>
           <li class="offers__item">
@@ -81,10 +83,10 @@
               <a class="button offer__button offer__button--order" href="#">Забронировать</a>
             </section>
             <section class="offers__raiting">
-              <div class="offers__raiting--icon">
+              <div class="offers__raiting-icon">
               <!--тут звездочки-оценки-->
               </div>
-              <p class="offers__raiting--text">Рейтинг: 8,9</p>
+              <p class="offers__raiting-text">Рейтинг: 8,9</p>
             </section>
           </li>
           <li class="offers__item">
@@ -99,10 +101,10 @@
               <a class="button offer__button offer__button--order" href="#">Забронировать</a>
             </section>
             <section class="offers__raiting">
-              <div class="offers__raiting--icon">
+              <div class="offers__raiting-icon">
               <!--тут звездочки-оценки-->
               </div>
-              <p class="offers__raiting--text">Рейтинг: 9,2</p>
+              <p class="offers__raiting-text">Рейтинг: 9,2</p>
             </section>
           </li>
         </ul>
