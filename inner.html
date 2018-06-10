@@ -21,13 +21,61 @@
             <a class="main-nav__link" href="inner.html">Гостиницы</a>
           </li>
         </ul>
-        <!--картинку-ссылку на главную вставила, как и было сказано в видео, после списка-->
         <a class="main-nav__logo" href="index.html"><img class="main-nav__img" src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
       </nav>
     </header>
     <main class="container">
+      <h1 class="container__heading visually-hidden">Гостницы</h1>
       <section class="filters">
-        <!--фильтры реализуются формами, поэтому пока их не верстала-->
+        <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filters__choice">
+          <legend class="filters__legend">Инфраструктура:</legend>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filters__option visually-hidden" type="checkbox" name="pool" id="option-pool" checked>
+                <label class="filters__label" for="option-pool">Бассейн</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__option visually-hidden" type="checkbox" name="parking" id="option-parking">
+                <label class="filters__label" for="option-parking">Парковка</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__option visually-hidden" type="checkbox" name="wifi" id="option-wifi">
+                <label class="filters__label" for="option-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__choice">
+            <legend class="filters__legend">Тип жилья:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__option visually-hidden" type="checkbox" name="hotel" id="option-hotel" checked>
+                  <label class="filters__label" for="option-hotel">Гостиница</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__option visually-hidden" type="checkbox" name="motel" id="option-motel" checked>
+                  <label class="filters__label" for="option-motel">Мотель</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__option visually-hidden" type="checkbox" name="appartments" id="option-appartments" checked>
+                  <label class="filters__label" for="option-appartments">Аппартаменты</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="filters__choice">
+            <legend class="filters__legend">Стоимость в сутки (Р)</legend>
+            <label class="filters__label visually-hidden" for="min-price">Минимальная стоимость</label>
+            <input class="filters__input filters__input--min" type="text" placeholder="От 0" id="min-price">
+            <label class="filters__label visually-hidden" for="max-price">Максимальная стоимость</label>
+            <input class="filters__input filters__input--max" type="text" placeholder="До 3000" id="max-price">
+            <div class="filters__range filters__range--min">
+              <span class="filters__range-btn filters__range-btn--min">
+            </div>
+            <div class="filters__range filters__range--max">
+              <span class="filters__range-btn filters__range-btn--max">
+            </div>
+            <button class="button filters__button" type="button">Показать</button>
+        </form>
       </section>
       <section class="filter-results">
         <p class="filter-results__number">Найдено: 3</p>
@@ -46,9 +94,8 @@
           </li>
         </ul>
         <div class="filter-results__ranking">
-          <!--пока со словами, потом добавим стрелки-->
-          <a class="filter-results__order filter-results__order--up" href="inner.html?sort=up">По возрастанию</a>
-          <a class="filter-results__order filter-results__order--down" href="inner.html?sort=down">По убыванию</a>
+          <a class="filter-results__order filter-results__order--up" href="inner.html?sort=up"><span class="filter-results__label visually-hidden">По возрастанию</span></a>
+          <a class="filter-results__order filter-results__order--down" href="inner.html?sort=down"><span class="filter-results__label visually-hidden">По убыванию</span></a>
         </div>
       </section>
       <section class="offers">
@@ -58,7 +105,7 @@
               <img class="offers__img" src="img/offer-1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
             </section>
             <section class="offers__description">
-              <h3 class="offers__title">Amara Resort & Spa</h3>
+              <a class="offers__title" href="#">Amara Resort & Spa</a>
               <p class="offers__type">Гостиница</p>
               <p class="offers_price">От 4000 р.</p>
               <a class="button offers__button offers__button--more" href="#">Подробнее</a>
@@ -76,7 +123,7 @@
               <img class="offers__img" src="img/offer-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             </section>
             <section class="offers__description">
-              <h3 class="offers__title">Desert Quail Inn</h3>
+              <a class="offers__title" href="#">Desert Quail Inn</a>
               <p class="offers__type">Мотель</p>
               <p class="offers_price">От 3000 р.</p>
               <a class="button offer__button offer__button--more" href="#">Подробнее</a>
@@ -94,7 +141,7 @@
               <img class="offers__img" src="img/offer-3.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
             </section>
             <section class="offers__description">
-              <h3 class="offers__title">Villas at Poco Diablo</h3>
+              <a class="offers__title" href="#">Villas at Poco Diablo</a>
               <p class="offers__type">Апартаменты</p>
               <p class="offers_price">От 2000 р.</p>
               <a class="button offer__button offer__button--more" href="#">Подробнее</a>
@@ -114,12 +161,28 @@
       <p class="main-footer__info"><b>#visitsedona</b></p>
       <div class="footer-social">
         <ul class="footer-social__list">
-          <li><a class="footer-social__button" href="#">Twitter</a></li>
-          <li><a class="footer-social__button" href="#">Facebook</a></li>
-          <li><a class="footer-social__button" href="#">YouTube</a></li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <span сlass="footer-social__label visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <span сlass="footer-social__label visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <span сlass="footer-social__label visually-hidden">YouTube</span>
+            </a>
+          </li>
         </ul>
       </div>
-      <p class="footer-copyright">Website by <a class="footer-copyright__link" href="https://htmlacademy.ru"><img src ="img/logo-html-academy.svg" width="115" height="41" alt="Сайт HTML Academy"></a></p>
+      <p class="footer-copyright">Website by
+        <a class="footer-copyright__link" href="https://htmlacademy.ru">
+          <span class="footer-copyright__label visually-hidden">HTML Academy</span>
+        </a>
+      </p>
     </footer>
   </body>
 </html>

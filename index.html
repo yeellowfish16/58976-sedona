@@ -27,7 +27,8 @@
     </header>
     <main class="container">
       <section class="intro">
-        <img class="intro__text" src="img/intro-text.png" width="458" height="352" alt="Sedona">
+        <h1 class="intro__heading visually-hidden">Sedona</h1>
+        <img class="intro__text" src="img/intro-text.png" width="458" height="352" alt="Welcome to Sedona">
       </section>
       <section class="features">
         <h2 class="features__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -83,7 +84,21 @@
         <h2 class="form__heading">Заинтересовались?</h2>
         <p class="form__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button form__button" type="button">Поиск гостиницы в Седоне</button>
-        <!--Саму форму я не размечаю, как было сказано в задании-->
+        <form class="form__field" method="post" action="https://echo.htmlacademy.ru">
+          <label class="form__label" for="date-in-field">Дата заезда:</label>
+          <div class="form__wrapper">
+            <input class="form__input" type="date" id="date-in-field">
+          </div>
+          <label class="form__label" for="date-out-field">Дата выезда:</label>
+          <div class="form__wrapper">
+            <input class="form__input" type="date" id="date-out-field">
+          </div>
+          <label class="form__label" for="adult-number-field">Взрослые:</label>
+          <input class="form__input" type="number" id="adult-number-field">
+          <label class="form__label" for="children-number-field">Дети:</label>
+          <input class="form__input" type="number" id="children-number-field">
+          <button class="button form__button--search" type="submit">Найти</button>
+        </form>
       </section>
       <section class="map">
         <img class="map__img" src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
@@ -93,12 +108,28 @@
       <p class="main-footer__info"><b>#visitsedona</b></p>
       <div class="footer-social">
         <ul class="footer-social__list">
-          <li><a class="footer-social__button" href="#">Twitter</a></li>
-          <li><a class="footer-social__button" href="#">Facebook</a></li>
-          <li><a class="footer-social__button" href="#">YouTube</a></li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <span сlass="footer-social__label visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <span сlass="footer-social__label visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <span сlass="footer-social__label visually-hidden">YouTube</span>
+            </a>
+          </li>
         </ul>
       </div>
-      <p class="footer-copyright">Website by <a class="footer-copyright__link" href="https://htmlacademy.ru"><img src ="img/logo-html-academy.svg" width="115" height="41" alt="Сайт HTML Academy"></a></p>
+      <p class="footer-copyright">Website by
+        <a class="footer-copyright__link" href="https://htmlacademy.ru">
+          <span class="footer-copyright__label visually-hidden">HTML Academy</span>
+        </a>
+      </p>
     </footer>
   </body>
 </html>
