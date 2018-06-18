@@ -6,7 +6,7 @@ body {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
 
   background-color: #ffffff;
@@ -17,6 +17,8 @@ a {
 }
 
 .button{
+  border: none;
+
   color: #ffffff;
   text-transform: uppercase;
   line-height: 21px;
@@ -37,7 +39,7 @@ a {
 }
 
 .main-nav__link,
-.offers__title {
+.offers__list_title {
   color: #000000;
 }
 
@@ -49,6 +51,10 @@ a {
 .main-nav__link:active,
 .offers__title:active {
   color: #bdbbbc;
+}
+
+.main-nav__link--actual {
+  color: #766357;
 }
 
 .intro {
@@ -63,9 +69,10 @@ a {
   text-align: center;
 }
 
-.feautures-heading {
+.feautures__heading {
   font-size: 21px;
   font-weight: 700;
+  color: #000000;
  }
 
 
@@ -74,6 +81,7 @@ a {
 
   color: #000000;
   text-align: center;
+  line-height: 21px;
 }
 
 .features__item:first-child,
@@ -86,7 +94,9 @@ a {
 .features__item .features__item--inner {
   background-color: #ffffff;
 
-  color: #000000;
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .features__title {
@@ -94,6 +104,11 @@ a {
   font-weight: 700;
   line-height: 21px;
 }
+
+.features__item--inner .features__title {
+  color: #000000;
+}
+
 
 .features__item--inner:first-child .features__icon {
   width: 75px;
@@ -121,6 +136,16 @@ a {
 
 .form {
   text-align: center;
+}
+
+.form__heading {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.form__text {
+  line-height: 24px;
 }
 
 .form .button {
@@ -165,6 +190,7 @@ a {
 
 .form__label {
   font-weight: 700;
+  color: #000000;
 }
 
 .form__input {
@@ -180,7 +206,7 @@ a {
 }
 
 .form__input:focus {
-  border: 2px solid #e5e5e5;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
 
   background-color: #ffffff;
 }
@@ -188,6 +214,7 @@ a {
 .main-footer__info {
   font-size: 21px;
   font-weight: 700;
+  color: #000000;
 }
 
 .filters {
@@ -208,7 +235,7 @@ a {
   font-weight: 700;
 }
 
-.filters-label {
+.filters__label {
   line-height: 21px;
 }
 
@@ -244,11 +271,13 @@ a {
 .filter-results__number {
   font-size: 21px;
   font-weight: 700;
+  color: #000000;
 }
 
 .filter-results__sort {
   font-size: 12px;
   line-height: 18px;
+  color: #000000;
 }
 
 .filter-results__parameter {
@@ -267,13 +296,43 @@ a {
   color: #000000;
 }
 
+.offers__description {
+  line-height: 21px;
+}
+
 .offers__title {
   font-size: 21px;
   font-weight: 700;
+  line-height: 26px;
 }
 
 .offers__raiting-text {
   background-color: #f2f2f2;
+
+  line-height: 21px;
+}
+
+.footer-copyright {
+  color: #000000;
+ }
+
+.filters__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.filters__input:-moz-placeholder {
+  color: #ffffff;
+}
+
+.visually-hidden {
+position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 
