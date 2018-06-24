@@ -1018,6 +1018,12 @@ img {
   cursor: pointer;
 }
 
+.filters__option:focus + .filters__label::before {
+  background-image: url('../img/checkbox-off.svg');
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filters__option:checked + .filters__label::before {
   content: "";
   position: absolute;
