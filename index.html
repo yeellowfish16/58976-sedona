@@ -23,8 +23,6 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="inner.html">Гостиницы</a>
           </li>
-
-
         </ul>
         <a class="main-nav__logo main-nav__link main-nav__link--actual"><img class="main-nav__img" src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
       </nav>
@@ -109,17 +107,21 @@
             </div>
           </div>
           <div class="form__wrapper form__wrapper--short">
-            <label class="form__label form__label--adult" for="adult-number-field">Взрослые:</label>
-            <div class="form__input-wrapper form__input-wrapper--number">
-              <button class="form__icon form__icon--minus" type="button">–</button>
-              <input class="form__input" type="text" id="adult-number-field" placeholder="2">
-              <button class="form__icon form__icon--plus" type="button">+</button>
+            <div class="form__wrapper form__wrapper--label">
+              <label class="form__label" for="adult-number-field">Взрослые:</label>
+              <div class="form__input-wrapper form__input-wrapper--number">
+                <button class="form__icon form__icon--minus" type="button">–</button>
+                <input class="form__input" type="text" id="adult-number-field" placeholder="2">
+                <button class="form__icon form__icon--plus" type="button">+</button>
+              </div>
             </div>
-            <label class="form__label form__label--children" for="children-number-field">Дети:</label>
-            <div class="form__input-wrapper form__input-wrapper--number">
-              <button class="form__icon form__icon--minus" type="button">–</button>
-              <input class="form__input" type="text" id="children-number-field" placeholder="0">
-              <button class="form__icon form__icon--plus" type="button">+</button>
+            <div class="form__wrapper form__wrapper--label">
+              <label class="form__label" for="children-number-field">Дети:</label>
+              <div class="form__input-wrapper form__input-wrapper--number">
+                <button class="form__icon form__icon--minus" type="button">–</button>
+                <input class="form__input" type="text" id="children-number-field" placeholder="0">
+                <button class="form__icon form__icon--plus" type="button">+</button>
+              </div>
             </div>
           </div>
           <button class="button form__button form__button--search" type="submit">Найти</button>
@@ -131,7 +133,6 @@
     </main>
     <footer class="main-footer main-footer--index">
       <p class="main-footer__info">#visitsedona</p>
-      <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
             <a class="footer-social__button" href="#">
@@ -152,7 +153,6 @@
             </a>
           </li>
         </ul>
-      </div>
       <p class="footer-copyright">Website by
         <a class="footer-copyright__link" href="https://htmlacademy.ru">
           <span class="footer-copyright__label visually-hidden">HTML Academy</span>
