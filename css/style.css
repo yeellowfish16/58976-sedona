@@ -146,17 +146,15 @@ img {
   content: '';
 
   width: 100%;
-  height: 4.65vw;
-  min-height: 36px;
-  max-height: 57px;
+  height: 57px;
 
   position: absolute;
   right: 0;
   bottom: 0;
 
   background-image: url('../img/intro-shape.png');
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 100% 57px;
+          background-size: 100% 57px;
   background-repeat: no-repeat;
 }
 
@@ -284,7 +282,7 @@ img {
  }
 
 .features__title {
-  width: 150px;
+  width: 151px;
   margin: 0 auto;
   margin-bottom: 23px;
   max-width: 240px;
@@ -682,6 +680,7 @@ img {
 }
 .form__input::-moz-placeholder{
   color: #000000;
+  opacity: 1;
 }
 .form__input:-ms-input-placeholder{
   color: #000000;
@@ -693,6 +692,9 @@ img {
   color: #000000;
 }
 
+.map__img {
+  min-height: 593px;
+}
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1335,6 +1337,7 @@ img {
 }
 .filters__input::-moz-placeholder{
   color: #ffffff;
+  opacity: 1;
 }
 .filters__input:-ms-input-placeholder{
   color: #ffffff;
