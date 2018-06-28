@@ -14,13 +14,13 @@ html {
 body {
   position: relative;
 
-  margin: 0 auto;
-  padding: 0;
   width: 100%;
   min-width: 768px;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -129,6 +129,7 @@ img {
 
 .intro {
   position: relative;
+
   min-height: 509px;
   margin: 0 auto;
   padding-top: 76px;
@@ -145,12 +146,12 @@ img {
 .intro::after {
   content: '';
 
-  width: 100%;
-  height: 57px;
-
   position: absolute;
   right: 0;
   bottom: 0;
+
+  width: 100%;
+  height: 57px;
 
   background-image: url('../img/intro-shape.png');
   -webkit-background-size: 100% 57px;
@@ -159,8 +160,9 @@ img {
 }
 
 .features {
-  text-align: center;
   margin-bottom: 50px;
+
+  text-align: center;
 }
 
 .features__heading {
@@ -173,11 +175,11 @@ img {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
- }
+}
 
- .features__main-text {
-    margin: 0;
-    margin-bottom: 51px;
+.features__main-text {
+  margin: 0;
+  margin-bottom: 51px;
 }
 
 .features__list {
@@ -203,11 +205,11 @@ img {
   padding-top: 47px;
   padding-bottom: 60px;
 
-  background-color: #eeeeee;
-
   color: #333333;
   text-align: center;
   line-height: 21px;
+
+  background-color: #eeeeee;
 }
 
 .features__item--long{
@@ -227,9 +229,9 @@ img {
   padding-top: 0;
   padding-bottom: 0;
 
-  background-color: #81b3d2;
-
   color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 .features__info {
@@ -246,8 +248,9 @@ img {
 
   width: 66.7%;
   height: inherit;
-  overflow: hidden;
   margin: 0;
+
+  overflow: hidden;
 }
 
 .features__img {
@@ -256,6 +259,7 @@ img {
   min-height: 100%;
   top: 50%;
   left: 50%;
+
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -269,23 +273,24 @@ img {
 .features__item:nth-child(3) {
   padding-left: 4.9%;
   padding-right: 5%;
- }
+}
 
 .features__item:nth-child(4) {
   padding-left: 5.7%;
   padding-right: 5.7%;
- }
+}
 
 .features__item:nth-child(5) {
   padding-left: 6.4%;
   padding-right: 6.25%;
- }
+}
 
 .features__title {
   width: 151px;
+  max-width: 240px;
   margin: 0 auto;
   margin-bottom: 23px;
-  max-width: 240px;
+
 
   font-size: 21px;
   font-weight: 700;
@@ -314,11 +319,11 @@ img {
   padding-top: 160px;
   padding-bottom: 84px;
 
-  background-color: #ffffff;
-
   color: #333333;
   font-size: 14px;
   line-height: 21px;
+
+  background-color: #ffffff;
 }
 
 .features__item--inner:first-child {
@@ -457,6 +462,11 @@ img {
 }
 
 .form__field {
+  position: absolute;
+  left: 50%;
+  margin-left: -283px;
+  z-index: 2;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -473,12 +483,6 @@ img {
       -ms-flex-pack: start;
           -webkit-justify-content: flex-start;
           justify-content: flex-start;
-
-  position: absolute;
-  left: 50%;
-  margin-left: -283px;
-  z-index: 2;
-
   width: 566px;
   padding: 55px;
   padding-top: 56px;
@@ -509,8 +513,6 @@ img {
           align-items: center;
   width: 100%;
   margin-bottom: 30px;
-
-  text-align: left;
 }
 
 .form__wrapper--short {
@@ -546,10 +548,10 @@ img {
   padding-left: 13px;
   width: 346px;
 
-  background-color: #f2f2f2;
-
   font-weight: 700;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
 }
 
 .form__wrapper--label {
@@ -653,11 +655,11 @@ img {
   padding: 0;
   border: none;
 
-  background-color: rgba(0,0,0,0);
-
   color: #a9a9a9;
   font-size: 24px;
   font-weight: 700;
+
+  background-color: rgba(0,0,0,0);
 }
 
 .form__icon--minus {
@@ -678,16 +680,20 @@ img {
 .form__input::-webkit-input-placeholder{
   color: #000000;
 }
+
 .form__input::-moz-placeholder{
   color: #000000;
   opacity: 1;
 }
+
 .form__input:-ms-input-placeholder{
   color: #000000;
 }
+
 .form__input::-ms-input-placeholder{
   color: #000000;
 }
+
 .form__input::placeholder{
   color: #000000;
 }
@@ -695,6 +701,7 @@ img {
 .map__img {
   min-height: 593px;
 }
+
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,9 +747,9 @@ img {
 }
 
 .footer-social {
- margin-top: 0;
- margin-bottom: 0;
- margin-left: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 32px;
 }
 
 .footer-social__list {
@@ -907,7 +914,7 @@ img {
 }
 
 .filters__price::after {
-  content: "";
+  content: '';
   position: absolute;
   top:50%;
   left: 50%;
@@ -1033,6 +1040,7 @@ img {
 
 .filters__choice--checkboxes {
   max-width: 150px;
+
   word-wrap: break-word;
 }
 
@@ -1066,7 +1074,7 @@ img {
 }
 
 .filters__option + .filters__label::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -webkit-calc(50% - 11.5px);
   top: calc(50% - 11.5px);
@@ -1077,11 +1085,13 @@ img {
 
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
+
   cursor: pointer;
 }
 
 .filters__option:checked + .filters__label::before {
   width: 27px;
+
   background-image: url('../img/checkbox-on.svg');
 }
 
@@ -1091,6 +1101,7 @@ img {
 
 .filters__option:checked:disabled + .filters__label::before {
   width: 27px;
+
   background-image: url('../img/checkbox-on-disabled.svg');
 }
 
@@ -1122,7 +1133,6 @@ img {
   padding-bottom: 27px;
 
   -webkit-box-shadow: 0 1px 0 0 #e5e5e5;
-
           box-shadow: 0 1px 0 0 #e5e5e5;
 }
 
@@ -1161,10 +1171,10 @@ img {
 }
 
 .filter-results__parameter {
+  margin-right: 33px;
   border-bottom: 1px dotted #81b3d2;
 
   color: #b2b2b2;
-  margin-right: 33px;
 }
 
 .filter-results__parameter:hover {
@@ -1179,6 +1189,7 @@ img {
 
 .filter-results__parameter--active {
   border: none;
+
   color: #81b3d2;
 }
 
@@ -1224,7 +1235,6 @@ img {
   padding-bottom: 21px;
 
   -webkit-box-shadow: 0 1px 0 0 #e5e5e5;
-
           box-shadow: 0 1px 0 0 #e5e5e5;
 }
 
@@ -1256,7 +1266,6 @@ img {
   -ms-flex-wrap: nowrap;
       -webkit-flex-wrap: nowrap;
           flex-wrap: nowrap;
-
   margin-bottom: 17px;
 }
 
@@ -1335,16 +1344,20 @@ img {
 .filters__input::-webkit-input-placeholder{
   color: #ffffff;
 }
+
 .filters__input::-moz-placeholder{
   color: #ffffff;
   opacity: 1;
 }
+
 .filters__input:-ms-input-placeholder{
   color: #ffffff;
 }
+
 .filters__input::-ms-input-placeholder{
   color: #ffffff;
 }
+
 .filters__input::placeholder{
   color: #ffffff;
 }
