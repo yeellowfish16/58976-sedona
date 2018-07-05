@@ -34,7 +34,9 @@ button.addEventListener("click", function (evt) {
 
   else {
     form.classList.add("form__field--animation", "form__field--open");
-    form.classList.remove("form__field--animation-reverse");      dateIn.focus();
+    form.classList.remove("form__field--animation-reverse");
+    setTimeout(function() { dateIn.focus(); }, 700);
+
     if (dateInStorage || dateOutStorage || adultStorage || childrenStorage) {
       dateIn.value = dateInStorage;
       dateOut.value = dateOutStorage;
