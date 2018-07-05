@@ -42,7 +42,7 @@ button.addEventListener("click", function (evt) {
       dateOut.value = dateOutStorage;
       adultNumber.value = adultStorage;
       childrenNumber.value = childrenStorage;
-      searchButton.focus();
+      setTimeout(function() { searchButton.focus(); }, 700);
     }
   }
 });
