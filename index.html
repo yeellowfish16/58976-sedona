@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize-minify.css" rel="stylesheet">
     <link href="css/style-minify.css" rel="stylesheet">
   </head>
   <body>
@@ -96,11 +96,11 @@
       <section class="map">
         <div class="form__container">
           <button class="button form__button form__button--summon" type="button">Поиск гостиницы в Седоне</button>
-          <form class="form__field" method="post" action="https://echo.htmlacademy.ru">
+          <form class="form__field form__field--open" method="post" action="https://echo.htmlacademy.ru">
             <div class="form__wrapper">
               <label class="form__label" for="date-in-field">Дата заезда:</label>
               <div class="form__input-wrapper form__input-wrapper--date">
-                <input class="form__input form__input--date-in" type="text" id="date-in-field" placeholder="24 апреля 2017">
+                <input class="form__input form__input--date-in" name="date-in" type="text" id="date-in-field" placeholder="24 апреля 2017">
                 <button class="form__icon form__icon--calendar" type="button" value="Календарь">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
                     <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#a9a9a9"/>
@@ -112,7 +112,7 @@
             <div class="form__wrapper">
               <label class="form__label" for="date-out-field">Дата выезда:</label>
               <div class="form__input-wrapper form__input-wrapper--date">
-                <input class="form__input form__input--date-out" type="text" id="date-out-field" placeholder="4 июля 2017">
+                <input class="form__input form__input--date-out" type="text" id="date-out-field" name="date-out" placeholder="4 июля 2017">
                 <button class="form__icon form__icon--calendar" type="button" value="Календарь">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
                     <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#a9a9a9"/>
@@ -126,7 +126,7 @@
                 <label class="form__label" for="adult-number-field">Взрослые:</label>
                 <div class="form__input-wrapper form__input-wrapper--number">
                   <button class="form__icon form__icon--minus" type="button" value="Убавить">–</button>
-                  <input class="form__input form__input--adult" type="text" id="adult-number-field" placeholder="2">
+                  <input class="form__input form__input--adult" name="adult-number" type="text" id="adult-number-field" placeholder="2">
                   <button class="form__icon form__icon--plus" type="button" value="Добавить">+</button>
                 </div>
               </div>
@@ -134,7 +134,7 @@
                 <label class="form__label" for="children-number-field">Дети:</label>
                 <div class="form__input-wrapper form__input-wrapper--number">
                   <button class="form__icon form__icon--minus" type="button" value="Убавить">–</button>
-                  <input class="form__input form__input--children" type="text" id="children-number-field" placeholder="0">
+                  <input class="form__input form__input--children" name="children-number" type="text" id="children-number-field" placeholder="0">
                   <button class="form__icon form__icon--plus" type="button" value="Добавить">+</button>
                 </div>
               </div>

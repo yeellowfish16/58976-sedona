@@ -11,6 +11,10 @@ var adultStorage = "";
 var childrenStorage = "";
 var searchButton = form.querySelector(".form__button--search");
 
+if (form.classList.contains("form__field--open")) {
+  form.classList.remove("form__field--open");
+}
+
 try {
   dateInStorage = localStorage.getItem("dateIn");
   dateOutStorage = localStorage.getItem("dateOut");
@@ -24,16 +28,16 @@ catch (err) {
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (form.classList.contains("form__field--open")) {
+  if (form.classList.contains("form__field--animation")) {
     form.classList.add("form__field--animation-reverse");
-    form.classList.remove("form__field--animation", "form__field--open");
+    form.classList.remove("form__field--animation");
     dateIn.classList.remove("form__input--error");
     dateOut.classList.remove("form__input--error");
     adultNumber.classList.remove("form__input--error");
   }
 
   else {
-    form.classList.add("form__field--animation", "form__field--open");
+    form.classList.add("form__field--animation");
     form.classList.remove("form__field--animation-reverse");
     setTimeout(function() { dateIn.focus(); }, 700);
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize-minify.css" rel="stylesheet">
     <link href="css/style-minify.css" rel="stylesheet">
   </head>
   <body>
@@ -39,7 +39,7 @@
                 <label class="filters__label" for="option-pool">Бассейн</label>
               </li>
               <li class="filters__item">
-                <input class="filters__option visually-hidden" type="checkbox" name="parking" id="option-parking" disabled="disabled">
+                <input class="filters__option visually-hidden" type="checkbox" name="parking" id="option-parking">
                 <label class="filters__label" for="option-parking">Парковка</label>
               </li>
               <li class="filters__item">
@@ -52,7 +52,7 @@
             <legend class="filters__legend">Тип жилья:</legend>
             <ul class="filters__list">
               <li class="filters__item">
-                <input class="filters__option visually-hidden" type="checkbox" name="hotel" id="option-hotel" checked disabled="disabled">
+                <input class="filters__option visually-hidden" type="checkbox" name="hotel" id="option-hotel" checked>
                 <label class="filters__label" for="option-hotel">Гостиница</label>
               </li>
               <li class="filters__item">
@@ -61,7 +61,7 @@
               </li>
               <li class="filters__item">
                 <input class="filters__option visually-hidden" type="checkbox" name="appartments" id="option-appartments" checked>
-                <label class="filters__label" for="option-appartments">Аппартаменты</label>
+                <label class="filters__label" for="option-appartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -69,10 +69,10 @@
             <legend class="filters__legend">Стоимость в сутки (Р):</legend>
               <div class="filters__price">
                 <label class="filters__label filters__label--min-price" for="min-price">От
-                  <input class="filters__input filters__input--min" type="text" placeholder="0" id="min-price">
+                  <input class="filters__input filters__input--min" name="min-price" type="text" placeholder="0" id="min-price">
                 </label>
                 <label class="filters__label filters__label--max-price" for="max-price">До
-                  <input class="filters__input filters__input--max" type="text" placeholder="3000" id="max-price">
+                  <input class="filters__input filters__input--max" name="max-price" type="text" placeholder="3000" id="max-price">
                 </label>
               </div>
             <div class="filters__range">
